@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Andrés - Desarrollador FullStack especializado en Java y Spring Boot">
+    <meta name="keywords" content="desarrollador, fullstack, java, spring boot, mysql, javascript">
+    <meta name="author" content="Andrés">
+    <title>Andrés - Desarrollador FullStack</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#home">Mi Portafolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <img src="https://via.placeholder.com/200x200/667eea/ffffff?text=A" alt="Andrés" class="profile-image">
+            <h1>Hola, soy Andrés</h1>
+            <p class="subtitle">Desarrollador FullStack</p>
+            <button class="btn btn-primary-custom" onclick="scrollToSection('projects')">
+                <i class="fas fa-code me-2"></i>Ver Proyectos
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2 class="section-title fade-in">PROYECTOS</h2>
+        <div class="row">
+            <div class="col-md-6 fade-in">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sistema de Inventarios</h3>
+                        <p class="project-description">
+                            API REST para gestión completa de inventarios con autenticación JWT y documentación Swagger.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">Spring Boot</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 fade-in">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sistema de Reservas Hoteleras</h3>
+                        <p class="project-description">
+                            Plataforma completa para gestión de reservas con panel administrativo y sistema de cotizaciones.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section">
+    <div class="container">
+        <h2 class="section-title fade-in">HABILIDADES</h2>
+        <div class="skills-grid">
+            <div class="skill-item fade-in">
+                <div class="skill-icon">
+                    <i class="fab fa-java"></i>
+                </div>
+                <div class="skill-name">Java</div>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item fade-in">
+                <div class="skill-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="skill-name">Spring Boot</div>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-item fade-in">
+                <div class="skill-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="skill-name">MySQL</div>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="skill-item fade-in">
+                <div class="skill-icon">
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 70%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section contact-section">
+    <div class="container">
+        <h2 class="section-title fade-in">CONTACTO</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="contact-form fade-in">
+                    <form id="contactForm">
+                        <div class="loading" id="loadingSpinner">
+                            <div class="spinner"></div>
+                            <p>Enviando mensaje...</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary-custom">
+                                <i class="fas fa-paper-plane me-2"></i>Enviar Mensaje
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="social-links">
+                        <a href="mailto:andres@gmail.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/andres" class="social-link" title="LinkedIn" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/andres" class="social-link" title="GitHub" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 Andrés. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+</body>
+</html>
